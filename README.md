@@ -29,3 +29,7 @@
 ![运行截图](https://github.com/Soarkey/StudentManagement/blob/master/images/6.jpg)
 
 ![运行截图](https://github.com/Soarkey/StudentManagement/blob/master/images/7.jpg)
+
+## 4.系统处理流程
+
+![系统处理流程](https://github.com/Soarkey/StudentManagement/blob/master/系统处理流程.jpg)
