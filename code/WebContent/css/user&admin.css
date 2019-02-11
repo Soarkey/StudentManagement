@@ -1,0 +1,307 @@
+/*Basic*/
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "PingFangSC-Regular","Microsoft Yahei",sans-serif;
+}
+
+body {
+	background-position: center center; 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #fff;
+}
+
+a{
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover{
+	font-size: 15px;
+	color: #E0555A;
+}
+
+ul{
+	list-style: none;
+}
+
+ul li{
+	display: inline-block;
+}
+
+header{
+	position: absolute;
+	top: 0;
+	z-index: 30;
+	font-size:15px;
+	line-height: 34px;
+	width: 100%;
+	background-color:#fff;
+	height: 60px;
+}
+
+.title{
+	float: left;
+	text-align: left;
+	font-size: 24px;
+	height: 60px;
+	line-height: 60px;
+	margin-left: 1.2em;
+}
+
+header nav{
+	float: right;
+	margin-right: 40px;
+	text-align: center;
+	height: 60px;
+}
+
+.userinfo ul li{
+	margin: 0 15px;
+	float: left;
+	height: 38px;
+	font-size: 20px;
+	line-height: 60px;
+	color:#000;
+}
+
+.userinfo ul li a{
+	color:#000;
+}
+
+.userinfo ul li a:hover{
+	font-size:20px;
+	color: red;
+}
+
+main{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 91%;
+	overflow: hidden;
+	z-index: 1;
+	padding-top:60px ;
+	background:#F2F2F2;
+}
+
+.select{
+	width:200px;
+	height:100%;
+	float: left;
+	z-index: 30;
+}
+
+.select h3{
+	margin-left:50px;
+	margin-top:30px;
+}
+
+/*------------------------------------------------------*/
+
+.accordion {
+ 	width: 100%;
+ 	max-width: 360px;
+ 	margin:10px auto 20px;
+ 	background: #FFF;
+ 	-webkit-border-radius: 4px;
+ 	-moz-border-radius: 4px;
+ 	border-radius: 4px;
+ }
+
+.accordion .link {
+	text-align:center;
+	cursor: pointer;
+	display: block;
+	padding: 15px;
+	color: #4D4D4D;
+	font-size: 15px;
+	font-weight: 700;
+	border-bottom: 1px solid #CCC;
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.accordion li{
+	text-align:center;
+	width:100%;
+}
+
+.accordion li:last-child .link {
+	border-bottom: 0;
+}
+
+.accordion li.open i.select_down {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+/*--------------------------- Submenu-----------------------------*/
+ .submenu {
+ 	display: none;
+ 	background: #444359;
+ 	font-size: 16px;
+ }
+
+ .submenu li {
+ 	font-size:15px;
+ 	text-align:center;
+ 	border-bottom: 1px solid #4b4a5e;
+ }
+
+ .submenu li a {
+ 	display: block;
+ 	text-decoration: none;
+ 	color: #d9d9d9;
+ 	padding: 12px;
+ 	-webkit-transition: all 0.25s ease;
+ 	-o-transition: all 0.25s ease;
+ 	transition: all 0.25s ease;
+ }
+
+ .submenu li a:hover {
+ 	background-color: #E0555A;
+ 	color:#fff;
+ }
+
+
+/*------------------------------------------------------*/
+
+.result{
+	position: absolute;
+	left: 220px;
+	margin:30px 60px 20px;
+	width:75%;
+	height: 560px;
+	background-color:#fff;
+}
+
+.welcome{
+	width: 100%;
+	text-align: center;
+	font-size:30px;
+	margin:200px 0;
+}
+
+footer{
+	display: block;
+	font-size: 15px;
+	text-align: right;
+	position: absolute;
+	right: 20px;
+    bottom: 20px;
+	z-index: 1;
+	line-height: 30px;
+	color: #fff;
+}
+
+footer .copyright{
+	margin-right: 60px;
+	color: #000;
+}
+
+/*------------------------------- 动态输出 ------------------------*/
+.all{
+	margin:20px 60px;
+}
+
+.all div{
+	border:1px solid #000;
+	line-height: 2.1em;
+}
+
+.all div:not(:first-child){
+	border-top: none;
+}
+
+.all div span{
+	display: inline-table;
+    width: 130px;
+    text-align: center;
+}
+
+.all div span:not(:last-child){
+	 border-right: 1px solid #000;
+}
+
+#all_sc div span{
+	width:125px;
+}
+
+.d_form{
+	width: 300px;
+	margin: 30px auto;
+	font-weight: 300;
+}
+
+.d_form h3{
+	font-weight: 600;
+	font-size: 1.5em;
+	margin-bottom: 1.2em;
+}
+
+.d_form p{
+	display: block;
+	font-size: 1em;
+	line-height: 1em;
+	margin-bottom: 1em;
+}
+
+.d_form input{
+	display: block;
+	border: 1px solid #666;
+	background-color: #fff;
+	height: 1.6em;
+	width: 90%;
+	padding: 0.5em 1em;
+	margin-bottom: 1em;
+}
+
+.d_form .radio{
+	display: inline-block;
+	width: 100%;
+	float:left;
+	margin-bottom: 10px;
+}
+
+.d_form .radio input{
+	float: left;
+	width: 20%;
+}
+
+.d_form .radio span{
+	float: left;
+}
+
+#submit{
+	color: #fff;
+	background-color: #333;
+	border: none;
+	line-height: 1em;
+	padding: 0.5em 0;
+	width: 100%;
+	height: 2.5em;
+	text-align: center;
+	cursor: pointer;
+	margin-top: 1.5em;
+}
+
+.error{
+	width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.error div{
+	margin:24% auto;
+	font-size:30px;
+	text-align: center;
+	font-weight: bold;
+}
