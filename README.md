@@ -16,16 +16,16 @@
 
 ## 3.运行截图
 
-![运行截图](https://github.com/Soarkey/StudentManagement/images/1.jpg)
+![运行截图](https://github.com/Soarkey/StudentManagement/blob/master/images/1.jpg)
 
-![运行截图](https://github.com/Soarkey/StudentManagement/images/2.jpg)
+![运行截图](https://github.com/Soarkey/StudentManagement/blob/master/images/2.jpg)
 
-![运行截图](https://github.com/Soarkey/StudentManagement/images/3.jpg)
+![运行截图](https://github.com/Soarkey/StudentManagement/blob/master/images/3.jpg)
 
-![运行截图](https://github.com/Soarkey/StudentManagement/images/4.jpg)
+![运行截图](https://github.com/Soarkey/StudentManagement/blob/master/images/4.jpg)
 
-![运行截图](https://github.com/Soarkey/StudentManagement/images/5.jpg)
+![运行截图](https://github.com/Soarkey/StudentManagement/blob/master/images/5.jpg)
 
-![运行截图](https://github.com/Soarkey/StudentManagement/images/6.jpg)
+![运行截图](https://github.com/Soarkey/StudentManagement/blob/master/images/6.jpg)
 
-![运行截图](https://github.com/Soarkey/StudentManagement/images/7.jpg)
+![运行截图](https://github.com/Soarkey/StudentManagement/blob/master/images/7.jpg)
