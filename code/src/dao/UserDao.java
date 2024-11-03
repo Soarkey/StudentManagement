@@ -17,8 +17,8 @@ public class UserDao {
 		Connection conn = DBUtils.getConnection();
 		String sql = "select * from user where username = ?";
 		try{
-			//获取PreparedStatement对象
-			PreparedStatement ps = (PreparedStatement) conn.prepareStatement(sql);
+			//获取Statement对象
+			Statement ps = (Statement) conn.Statement(sql);
 			ps.setString(1, username);//给用户对象属性赋值
 			ResultSet rs = ps.executeQuery();
 			if (rs.next()) {
@@ -42,8 +42,8 @@ public class UserDao {
 		String sql = "select * from user where username = ? and password = ?;";
 		
 		try {
-			//获取PreparedStatement对象
-			PreparedStatement ps = (PreparedStatement) conn.prepareStatement(sql);
+			//获取Statement对象
+			Statement ps = (Statement) conn.Statement(sql);
 			//对sql参数进行动态赋值
 			ps.setString(1, username);
 			ps.setString(2, password);
@@ -98,7 +98,7 @@ public class UserDao {
 		String sql = "select level from user where username = ?;";
 		String level = null; 
 		try {
-			PreparedStatement ps = (PreparedStatement) conn.prepareStatement(sql);
+			Statement ps = (Statement) conn.Statement(sql);
 			ps.setString(1, username);
 			ResultSet rs = ps.executeQuery();
 			if(rs.next()){//存在该用户
@@ -121,7 +121,7 @@ public class UserDao {
 		ArrayList<User> results = new ArrayList<User>();
 		
 		try {
-			PreparedStatement ps = (PreparedStatement) conn.prepareStatement(sql);
+			Statement ps = (dStatement) conn.Statement(sql);
 			ResultSet rs = ps.executeQuery();
 
 			while(rs.next()){
@@ -148,7 +148,7 @@ public class UserDao {
 		
 		int flag = 0;
 		try {
-			PreparedStatement ps = (PreparedStatement) conn.prepareStatement(sql);
+			Statement ps = (Statement) conn.Statement(sql);
 			
 			ps.setString(1, username);
 			ps.setString(2, password);
@@ -169,7 +169,7 @@ public class UserDao {
 		
 		int flag = 0;
 		try {
-			PreparedStatement ps = (PreparedStatement) conn.prepareStatement(sql);
+			Statement ps = (Statement) conn.Statement(sql);
 			ps.setString(1, username);
 			flag = ps.executeUpdate();
 			ps.close();
@@ -187,7 +187,7 @@ public class UserDao {
 		
 		int flag = 0;
 		try {
-			PreparedStatement ps = (PreparedStatement) conn.prepareStatement(sql);
+			Statement ps = (Statement) conn.Statement(sql);
 			ps.setString(1, after_username);
 			ps.setString(2, after_password);
 			ps.setString(3, after_level);
