@@ -6,7 +6,6 @@ import java.util.ArrayList;
 
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.PreparedStatement;
-import com.mysql.jdbc.Statement;
 
 import model.User;
 import utils.DBUtils;
@@ -81,9 +80,12 @@ public class UserDao {
 				user.setPassword(password);
 				user.setLevel(level);
 				//将用户对象写入数据库
-				Statement stmt = (Statement) conn.createStatement();
-				stmt.executeUpdate("insert into user values('"+username+"','"+password+"','"+level+"');");
-				stmt.close();//释放资源
+				PreparedStatement ps = (PreparedStatement) conn.prepareStatement("insert into user values(?,?,?);");
+				ps.setString(1, username);
+				ps.setString(2, password);
+				ps.setString(3, level);
+				ps.executeUpdate();
+				ps.close();//释放资源
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
