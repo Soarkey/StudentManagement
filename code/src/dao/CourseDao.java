@@ -150,10 +150,11 @@ public class CourseDao {
 	//查询课程排名情况,返回一个ArrayList集合
 	public ArrayList<Course_ranking> course_ranking(String cno){
 		Connection conn = DBUtils.getConnection();
-		String sql = "select student.Sno Sno,Dname,Clname,Sname,Ssex,Sage,Grade from department,class,student,sc where student.sno = sc.sno and class.Clno = student.Clno and department.Dno = class.Dno and cno = '"+cno+"' order by grade desc;";
+		String sql = "select student.Sno Sno,Dname,Clname,Sname,Ssex,Sage,Grade from department,class,student,sc where student.sno = sc.sno and class.Clno = student.Clno and department.Dno = class.Dno and cno = ? order by grade desc;";
 		ArrayList<Course_ranking> course_ranking = new ArrayList<Course_ranking>();
 		try {
 			PreparedStatement ps = (PreparedStatement) conn.prepareStatement(sql);
+			ps.setString(1, cno);
 			ResultSet rs = ps.executeQuery();
 			while(rs.next()){
 				Course_ranking temp = new Course_ranking();
